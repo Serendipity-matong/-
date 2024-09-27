@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆注册</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@latest"></script>  
+</head>
+<body> 
+    <div class="fullscreen-bg">
+        <img src="R-C.jpg" alt="Background Image">
+    </div>
+    <div class="container" id="container">
+        <div class="logo">  </div>
+        <div class="form-container sign-up-container">
+            <form action="#" id="form">
+                <h1>用户注册</h1>
+                <div class="input-group">  
+                    <input type="text" id="username" name="username" placeholder="邮箱" required>  
+                    <div class="input-border"></div>  
+                </div>  
+                <div class="input-group">  
+                    <input type="password" id="password" name="password" placeholder="密码" required>  
+                    <button type="button" class="toggle-password">显现</button> 
+                    <div class="input-border"></div>  
+                </div> 
+                <div id="error-message" class="error-message"></div>  
+                <button type="submit" class="submit-btn1">注册</button>
+            </form>
+        </div>
+        <div class="form-container sing-in-container">
+            <form action="login.html" id="auth-form">
+                <h1>用户登录</h1>
+                <div class="input-group">  
+                    <input type="text" id="username" name="username" placeholder="邮箱" required>  
+                    <div class="input-border"></div>  
+                </div>  
+                <div class="input-group">  
+                    <input type="password" id="password1" name="password1" placeholder="密码" required>  
+                    <button type="button" class="toggle-password1">显现</button> 
+                    <div class="input-border"></div>  
+                </div> 
+                <div id="error-message" class="error-message"></div>  
+                <button type="submit" class="submit-btn">登录</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-pannel overlay-left">
+                <h1>已有帐号？</h1>
+                <p>点我登录。</p>
+                <button class="ghost" id="signIn">登录</button>
+                </div>
+            <div class="overlay-pannel overlay-right">
+                <h1>没有账号？</h1>
+                <p>点我注册。</p>
+                <button class="ghost" id="signUp">注册</button>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
